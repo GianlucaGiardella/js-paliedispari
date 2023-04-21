@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1,
+.result {
+    font-size: 4rem;
+}
+
+#selection,
+button {
+    font-size: 1.5rem;
+}
+
+#selection {
+    line-height: 50px;
+}
+
+.numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers h2 {
+    margin-bottom: 1rem;
+}
+
+#user_num {
+    border: none;
+}
+
+#user_num,
+#comp_num {
+    font-size: 6rem;
+}
+
+button {
+    align-self: center;
+    padding: 1rem;
+}
+
+.result {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
