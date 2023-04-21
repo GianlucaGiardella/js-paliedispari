@@ -1,10 +1,11 @@
+// variables
+const result = document.querySelector(".container").appendChild(document.createElement("div"));
 const compBox = document.querySelector(".comp_box").appendChild(document.createElement("div"));
 compBox.id = "comp_num";
 
-const result = document.querySelector(".container").appendChild(document.createElement("div"));
-
+// functions
 function calculate() {
-    const selection = document.querySelector("#selection").value.toLowerCase();
+    const selection = document.querySelector("#selection").value.toLowerCase().trim();
     const userNum = parseInt(document.querySelector("#user_num").value);
     const compNum = getRndInteger(1, 5);
     compBox.innerHTML = `${compNum}`;
