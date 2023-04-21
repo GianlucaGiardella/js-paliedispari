@@ -11,7 +11,7 @@ function calculate() {
     const sum = userNum + compNum;
 
     if (selection != "") {
-        if (selection === "pari" && isEven(sum) || selection === "dispari" && isOdd(sum)) {
+        if (selection === evenOrOdd(sum)) {
             result.innerHTML = `Totale: ${sum} <br> Hai vinto!`
             result.className = "result green";
         } else {
@@ -25,16 +25,9 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function isEven(sum) {
+function evenOrOdd(sum) {
     if (sum % 2 === 0) {
-        return true;
+        return "pari";
     }
-    return false;
-}
-
-function isOdd(sum) {
-    if (sum % 2 != 0) {
-        return true;
-    }
-    return false;
+    return "dispari";
 }
